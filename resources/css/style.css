@@ -250,6 +250,20 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile Navi */
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: white;
+}
+
 /* Sticky Navi */
 
 .sticky {
@@ -262,9 +276,7 @@ header {
   z-index: 999;
 }
 
-.sticky .main-nav {
-  margin-top: 25px;
-}
+.sticky .main-nav { margin-top: 25px; } 
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -592,4 +604,23 @@ footer p {
   font-size: 80%;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+
+/* ---------------------------------*/
+/* Animations */
+/* ---------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4 {
+  opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated {
+  opacity: 1;
 }
