@@ -100,4 +100,20 @@ $('a[href*="#"]')
       icon.addClass('ion-navicon-round');
     }
   })
+
+  //gmaps
+  var map = new GMaps({
+    div: '.map',
+    lat: 64.1323632,
+    lng: -20.85,
+    zoom: 8
+  });
+  map.addMarker({
+    lat: 64.1323632,
+    lng: -21.9925228,
+    title: 'Omni',
+    infoWindow: {
+      content: '<p>Omnifood in iceland</p>'
+    }
+});
 });
